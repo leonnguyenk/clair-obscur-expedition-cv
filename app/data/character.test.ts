@@ -5,7 +5,7 @@ import { describe, expect, it } from 'vitest';
 const load = (date: string) => at(date, () => import('./character'));
 
 describe('CHARACTER level', () => {
-  it('is the owner’s age, which goes up on the birthday (27 June 1991)', async () => {
+  it('is the owner’s age, which goes up on the birthday (4 MARCH 1991)', async () => {
     expect((await load('2026-06-26T12:00:00')).CHARACTER.level).toBe(34);
     expect((await load('2026-06-27T12:00:00')).CHARACTER.level).toBe(35);
   });
