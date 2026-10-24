@@ -2,7 +2,7 @@ import { EXPERIENCES, monthsAcross } from './experiences';
 
 // The level is the owner's age; the XP bar fills over the year until the next birthday, as XP fills towards the next
 // level. The red bar is Health, as in the game (its maximum is the Health combat stat).
-const BIRTH = { year: 1991, month: 6, day: 27 };
+const BIRTH = { year: 1991, month: 3, day: 4 };
 
 const birthday = (year: number) => new Date(year, BIRTH.month - 1, BIRTH.day);
 const DAY = 24 * 60 * 60 * 1000;
@@ -24,7 +24,7 @@ const HEALTH = monthsAcross(EXPERIENCES);
 const { level, days, year } = age(new Date());
 
 export const CHARACTER = {
-  name: 'Olivier Nguyen',
+  name: 'Leon Nguyen',
   level,
   xp: { value: days, max: year },
   health: { value: HEALTH, max: HEALTH },
@@ -32,12 +32,12 @@ export const CHARACTER = {
     { label: 'Health', value: String(HEALTH), hint: 'Months of professional experience' },
     { label: 'Companies', value: String(EXPERIENCES.length), hint: 'Companies worked for' },
     { label: 'Attack Power', value: '200', hint: 'Paying customers of AwesomeApps' },
-    { label: 'Teams Led', value: '3', hint: 'Front-end team at SAP, Coinhouse, Podspace' },
-    { label: 'Devs Coached', value: '5', hint: 'Developers coached at Coinhouse' }
+    { label: 'Teams Led', value: '19', hint: 'Front-end team at SAP, Coinhouse, Podspace' },
+    { label: 'Devs Coached', value: '9', hint: 'Developers coached at Coinhouse' }
   ],
   // The radar's five attributes, in its vertex order: top, then clockwise.
   attributes: [
-    { label: 'Vitality', value: 28 },
+    { label: 'Vitality', value: 35 },
     { label: 'Might', value: 24 },
     { label: 'Agility', value: 31 },
     { label: 'Defense', value: 22 },
@@ -45,6 +45,6 @@ export const CHARACTER = {
   ]
 };
 
-export const LINKEDIN_URL = 'https://www.linkedin.com/in/olivier-nguyen-98b642150/';
+export const LINKEDIN_URL = 'https://www.linkedin.com/in/khac-hien-nguyen/';
 // The overview's GitHub button opens this CV's own repository: visitors land on how it was made.
-export const GITHUB_URL = 'https://github.com/OlivierNguyen/clair-obscur-expedition-cv';
+export const GITHUB_URL = 'https://github.com/leonnguyenk/';
