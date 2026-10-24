@@ -23,7 +23,7 @@ describe('pageMeta', () => {
     ] as const) {
       const [, description] = pageMeta(page);
       expect(description.name).toBe('description');
-      expect(description.content).toContain('Olivier Nguyen');
+      expect(description.content).toContain('Leon Nguyen');
     }
   });
 });

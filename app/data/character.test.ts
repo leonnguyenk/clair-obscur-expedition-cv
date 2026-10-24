@@ -6,14 +6,14 @@ const load = (date: string) => at(date, () => import('./character'));
 
 describe('CHARACTER level', () => {
   it('is the owner’s age, which goes up on the birthday (4 MARCH 1991)', async () => {
-    expect((await load('2026-06-26T12:00:00')).CHARACTER.level).toBe(34);
-    expect((await load('2026-06-27T12:00:00')).CHARACTER.level).toBe(35);
+    expect((await load('2026-03-03T12:00:00')).CHARACTER.level).toBe(34);
+    expect((await load('2026-03-04T12:00:00')).CHARACTER.level).toBe(35);
   });
 
   it('fills the XP bar with the days since the last birthday', async () => {
     const { xp } = (await load('2026-10-19T12:00:00')).CHARACTER;
-    // 27 June to 19 October: 114 days, out of the 365 until the next birthday.
-    expect(xp).toEqual({ value: 114, max: 365 });
+    // 27 June to 19 October: 229 days, out of the 365 until the next birthday.
+    expect(xp).toEqual({ value: 229, max: 365 });
   });
 
   it('gives the year a leap day when one falls before the next birthday', async () => {
@@ -22,7 +22,7 @@ describe('CHARACTER level', () => {
   });
 
   it('starts the XP bar empty on the birthday itself', async () => {
-    expect((await load('2026-06-27T12:00:00')).CHARACTER.xp.value).toBe(0);
+    expect((await load('2026-03-04T12:00:00')).CHARACTER.xp.value).toBe(0);
   });
 });
 
