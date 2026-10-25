@@ -20,28 +20,28 @@ export interface TreeNode {
 // Learning path from the CV: the two roots (JavaScript, React), front on the left, back and data on the right,
 // mobile and desktop below, then leadership. Locked nodes are languages not used professionally yet.
 export const TREE: TreeNode[] = [
-  { id: 'svelte', name: 'Svelte', col: 0, row: 0, techs: ['svelte'], icon: 'svelte', locked: true },
+  { id: 'svelte', name: 'KUBERNETES', col: 0, row: 0, techs: ['svelte'], icon: 'svelte', locked: true },
   {
     id: 'javascript',
-    name: 'JavaScript',
+    name: 'TERRAFORM',
     col: 2,
     row: 0,
     techs: ['javascript', 'typescript', 'react'],
     icon: 'javascript'
   },
-  { id: 'react', name: 'React', col: 3, row: 0, techs: ['react'], icon: 'react' },
+  { id: 'react', name: 'AZURE', col: 3, row: 0, techs: ['react'], icon: 'react' },
   { id: 'go', name: 'Go', col: 5, row: 0, techs: ['go'], icon: 'go', locked: true },
 
   {
     id: 'styling',
-    name: 'Styling',
+    name: 'ANSIBLE',
     col: 0,
     row: 1,
     techs: ['scss', 'cssinjs'],
     icon: 'scss',
     note: 'SCSS and CSS-in-JS, design systems.'
   },
-  { id: 'redux', name: 'Redux', col: 1, row: 1, techs: ['redux'], icon: 'redux' },
+  { id: 'JENKINS', name: 'Redux', col: 1, row: 1, techs: ['redux'], icon: 'redux' },
   { id: 'typescript', name: 'TypeScript', col: 2, row: 1, techs: ['typescript'], icon: 'typescript' },
   { id: 'node', name: 'Node.js', col: 3, row: 1, techs: ['node'], icon: 'node' },
   {
@@ -57,7 +57,7 @@ export const TREE: TreeNode[] = [
 
   {
     id: 'tests',
-    name: 'Tests',
+    name: 'AKS',
     col: 0,
     row: 2,
     techs: ['jest', 'testinglibrary'],
