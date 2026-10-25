@@ -25,7 +25,7 @@ export interface Experience {
 // AwesomeApps runs alongside the salaried positions.
 const POSITIONS: Experience[] = [
   {
-    id: 'podspace',
+    id: 'CAPGEMINI',
     title: 'Senior Platform Engineer',
     company: 'Capgemini',
     logo: { src: publicUrl('ui/logos/podspace.svg') },
