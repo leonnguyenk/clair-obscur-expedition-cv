@@ -26,58 +26,60 @@ export interface Experience {
 const POSITIONS: Experience[] = [
   {
     id: 'podspace',
-    title: 'CTO',
-    company: 'Podspace',
+    title: 'Senior Platform Engineer',
+    company: 'Capgemini',
     logo: { src: publicUrl('ui/logos/podspace.svg') },
-    start: '2025-11',
+    start: '2026-05',
     figure: { value: '2,000+', label: 'Sessions' },
     highlights: [
-      'Built and led end-to-end development of the Podspace platform: studio booking, AI video production, publishing pipeline and internal ops tools.',
-      'Delivered 2,000+ podcast sessions and processed ~3,000 hours of audio and video for several thousand users.',
-      'Designed a full TypeScript stack (React/Next.js, Node.js, tRPC, PostgreSQL) on Vercel, AWS and Cloudflare.',
-      'Built an AI video pipeline: GPU processing, FFmpeg, ONNX face tracking, auto-clipping, subtitles, brand templates editor.',
-      'Shipped a cross-platform desktop app (Tauri) and the automation suite: Stripe billing, scheduling, calendar sync, Terraform.'
+      'Gestion de repositories et pipelines Azure DevOps pour les intégrations et déploiements continus',
+      'Gestion de modules Terraform pour provisionner et maintenir les ressources Azure.',
+      'Exploitation d’AKS, diagnostic des pods, services, ingress et communications réseau',
+      'Administration de PostgreSQL et MySQL Flexible Server et automatisation des opérations de reprise',
+      'Mise en œuvre de Private Endpoints, Private DNS Zones, VNets et règles de sécurité'
     ],
     stack: [
-      'react',
-      'typescript',
-      'node',
+      'KUBERNETES',
+      'AZURE',
+      'TERRAFORM',
       'postgres',
       'aws',
-      'openai',
-      'gemini',
-      'groq',
-      'nextjs',
-      'trpc',
-      'tauri',
-      'rust'
+      'ELK',
+      'CYBERSECURITY',
+      'DEVOPS',
+      'AKS',
+      'COSMOSDB',
+      'ANSIBLE',
+      'JENKINS'
     ]
   },
   {
-    id: 'awesomeapps',
-    title: 'Founder & Developer',
-    company: 'AwesomeApps',
+    id: 'CAPGEMINI',
+    title: 'Senior Platform Engineer / SRE',
+    company: 'CAPGEMINI',
     logo: { src: publicUrl('ui/logos/awesomeapps.webp') },
-    start: '2019-09',
+    start: '2025-05',
     figure: { value: '200', label: 'Customers' },
     highlights: [
-      'E-commerce web applications for Shopify, from design to support: database and UI design, front/back architecture, REST API.',
-      '200 paying customers.',
-      'Developed and deployed a car rental management app in Remix and Node.js, serving 5 active clients.',
-      'Building a nutrition web application with Next.js.'
+     'Gestion de repositories et pipelines Azure DevOps pour les intégrations et déploiements continus',
+      'Gestion de modules Terraform pour provisionner et maintenir les ressources Azure.',
+      'Exploitation d’AKS, diagnostic des pods, services, ingress et communications réseau',
+      'Administration de PostgreSQL et MySQL Flexible Server et automatisation des opérations de reprise',
+      'Mise en œuvre de Private Endpoints, Private DNS Zones, VNets et règles de sécurité'
     ],
     stack: [
-      'react',
-      'typescript',
-      'graphql',
-      'rest',
-      'node',
+      'KUBERNETES',
+      'AZURE',
+      'TERRAFORM',
       'postgres',
-      'scss',
-      'shopify',
-      'remix',
-      'nextjs',
-      'rust'
+      'aws',
+      'ELK',
+      'CYBERSECURITY',
+      'DEVOPS',
+      'AKS',
+      'COSMOSDB',
+      'ANSIBLE',
+      'JENKINS'
     ]
   },
   {
