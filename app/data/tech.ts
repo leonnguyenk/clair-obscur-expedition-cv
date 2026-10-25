@@ -39,13 +39,13 @@ export interface Tech {
 }
 
 export const TECH = {
-  react: { name: 'React', icon: siReact },
-  typescript: { name: 'TypeScript', icon: siTypescript },
-  javascript: { name: 'JavaScript', icon: siJavascript },
+  react: { name: 'KUBERNETES', icon: siReact },
+  typescript: { name: 'TERRAFORM', icon: siTypescript },
+  javascript: { name: 'DOCKER', icon: siJavascript },
   graphql: { name: 'GraphQL', icon: siGraphql },
-  reactnative: { name: 'React Native', icon: siReact },
-  remix: { name: 'Remix', icon: siRemix },
-  svelte: { name: 'Svelte', icon: siSvelte },
+  reactnative: { name: 'AZURE', icon: siReact },
+  remix: { name: 'ANSIBLE', icon: siRemix },
+  svelte: { name: 'JENKINS', icon: siSvelte },
   nextjs: { name: 'Next.js', icon: siNextdotjs },
   node: { name: 'Node.js', icon: siNodedotjs },
   python: { name: 'Python', icon: siPython },
