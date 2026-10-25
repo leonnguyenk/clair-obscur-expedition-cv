@@ -68,7 +68,7 @@ export const PICTOS: Picto[] = [
   },
   {
     id: 'music',
-    name: 'Music',
+    name: 'KUBERNETES',
     level: 22,
     element: 'cyan',
     category: 'Support',
@@ -80,7 +80,7 @@ export const PICTOS: Picto[] = [
   },
   {
     id: 'sports',
-    name: 'Sports',
+    name: 'TERRAFORM',
     level: 10,
     element: 'green',
     category: 'Defensive',
