@@ -1,0 +1,13 @@
+✓ Lockfile passes supply-chain policies (verified 6m ago)
+Lockfile is up to date, resolution step is skipped
+Progress: resolved 1, reused 0, downloaded 0, added 0
+Packages: +501
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Progress: resolved 501, reused 501, downloaded 0, added 218
+Progress: resolved 501, reused 501, downloaded 0, added 500
+Progress: resolved 501, reused 501, downloaded 0, added 501, done
+.../node_modules/@parcel/watcher install$ node scripts/build-from-source.js
+.../esbuild@0.25.9/node_modules/esbuild postinstall$ node install.js
+.../node_modules/@parcel/watcher install: sh: 1: node: not found
+.../esbuild@0.25.9/node_modules/esbuild postinstall: sh: 1: node: not found
+[ELIFECYCLE] Command failed.

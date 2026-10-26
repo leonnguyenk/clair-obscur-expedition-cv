@@ -12,16 +12,16 @@ export interface Skill {
 
 // The CV's skills section, in its order.
 const CV: [TechId, Skill['category']][] = [
-  ['AZURE', 'Languages & frameworks'],
+  ['azure', 'Languages & frameworks'],
   ['typescript', 'Languages & frameworks'],
   ['graphql', 'Languages & frameworks'],
-  ['KUBERNETES', 'Languages & frameworks'],
-  ['TERRAFORM', 'Languages & frameworks'],
-  ['ANSIBLE', 'Languages & frameworks'],
-  ['DOCKER', 'Languages & frameworks'],
-  ['ELK', 'Languages & frameworks'],
+  ['kubernetes', 'Languages & frameworks'],
+  ['terraform', 'Languages & frameworks'],
+  ['ansible', 'Languages & frameworks'],
+  ['docker', 'Languages & frameworks'],
+  ['elk', 'Languages & frameworks'],
   ['python', 'Languages & frameworks'],
-  ['JENKINS', 'Languages & frameworks'],
+  ['jenkins', 'Languages & frameworks'],
   ['rust', 'Languages & frameworks'],
   ['sql', 'Databases'],
   ['mysql', 'Databases'],

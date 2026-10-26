@@ -2,13 +2,19 @@ import { publicUrl } from '~/publicUrl';
 
 import {
   type SimpleIcon,
+  siAnsible,
   siDjango,
+  siDocker,
+  siElastic,
   siGo,
   siGooglegemini,
   siGraphql,
   siJavascript,
+  siJenkins,
   siJest,
+  siKubernetes,
   siMeteor,
+  siMicrosoftazure,
   siMongodb,
   siMysql,
   siNextdotjs,
@@ -25,6 +31,7 @@ import {
   siSpring,
   siSvelte,
   siTauri,
+  siTerraform,
   siTestinglibrary,
   siTrpc,
   siTypescript
@@ -39,13 +46,13 @@ export interface Tech {
 }
 
 export const TECH = {
-  react: { name: 'KUBERNETES', icon: siReact },
-  typescript: { name: 'TERRAFORM', icon: siTypescript },
-  javascript: { name: 'DOCKER', icon: siJavascript },
+  react: { name: 'React', icon: siReact },
+  typescript: { name: 'TypeScript', icon: siTypescript },
+  javascript: { name: 'JavaScript', icon: siJavascript },
   graphql: { name: 'GraphQL', icon: siGraphql },
-  reactnative: { name: 'AZURE', icon: siReact },
-  remix: { name: 'ANSIBLE', icon: siRemix },
-  svelte: { name: 'JENKINS', icon: siSvelte },
+  reactnative: { name: 'React Native', icon: siReact },
+  remix: { name: 'Remix', icon: siRemix },
+  svelte: { name: 'Svelte', icon: siSvelte },
   nextjs: { name: 'Next.js', icon: siNextdotjs },
   node: { name: 'Node.js', icon: siNodedotjs },
   python: { name: 'Python', icon: siPython },
@@ -73,7 +80,20 @@ export const TECH = {
   web3auth: { name: 'Web3Auth' },
   go: { name: 'Go', icon: siGo },
   spring: { name: 'Java Spring', icon: siSpring },
-  ruby: { name: 'Ruby', icon: siRuby }
+  ruby: { name: 'Ruby', icon: siRuby },
+
+  // --- Nouvelles entrées DevOps / Cloud ---
+  kubernetes: { name: 'Kubernetes', icon: siKubernetes },
+  azure: { name: 'Azure', icon: siMicrosoftazure },
+  terraform: { name: 'Terraform', icon: siTerraform },
+  docker: { name: 'Docker', icon: siDocker },
+  elk: { name: 'ELK Stack', icon: siElastic },
+  cybersecurity: { name: 'Cybersécurité' },
+  devops: { name: 'DevOps' },
+  aks: { name: 'AKS (Azure Kubernetes Service)', icon: siKubernetes },
+  cosmosdb: { name: 'Cosmos DB', src: publicUrl('ui/logos/cosmosdb.svg') },
+  ansible: { name: 'Ansible'},
+  jenkins: { name: 'Jenkins', icon: siJenkins }
 } satisfies Record<string, Tech>;
 
 export type TechId = keyof typeof TECH;

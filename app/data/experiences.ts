@@ -11,24 +11,20 @@ export interface Experience {
   title: string;
   company: string;
   logo: CompanyLogo;
-  // YYYY-MM; no end for the current position.
   start: string;
   end?: string;
   highlights: string[];
-  // The CV's stack line, then the technologies its bullets name.
   stack: TechId[];
   figure?: { value: string; label: string };
   freelance?: boolean;
 }
 
-// From the 2026 CV plus the BeeWyze freelance mission, most recent first (current positions, then by end date).
-// AwesomeApps runs alongside the salaried positions.
 const POSITIONS: Experience[] = [
   {
-    id: 'CAPGEMINI',
+    id: 'capgemini',
     title: 'Senior Platform Engineer',
     company: 'Capgemini',
-    logo: { src: publicUrl('ui/logos/podspace.svg') },
+    logo: { src: publicUrl('ui/logos/capgemini.svg') },
     start: '2026-05',
     figure: { value: '2,000+', label: 'Sessions' },
     highlights: [
@@ -39,110 +35,117 @@ const POSITIONS: Experience[] = [
       'Mise en œuvre de Private Endpoints, Private DNS Zones, VNets et règles de sécurité'
     ],
     stack: [
-      'KUBERNETES',
-      'AZURE',
-      'TERRAFORM',
+      'kubernetes',
+      'azure',
+      'terraform',
       'postgres',
       'aws',
-      'ELK',
-      'CYBERSECURITY',
-      'DEVOPS',
-      'AKS',
-      'COSMOSDB',
-      'ANSIBLE',
-      'JENKINS'
+      'elk',
+      'cybersecurity',
+      'devops',
+      'aks',
+      'cosmosdb',
+      'ansible',
+      'jenkins'
     ]
   },
   {
-    id: 'CAPGEMINI',
-    title: 'Senior Platform Engineer / SRE',
-    company: 'CAPGEMINI',
-    logo: { src: publicUrl('ui/logos/awesomeapps.webp') },
-    start: '2025-05',
+    id: 'aleysia',
+    title: 'Ingénieur SysOps',
+    company: 'Aleysia',
+    logo: { src: publicUrl('ui/logos/aleysia.svg') },
+    start: '2022-11',
+    end: '2023-01',
     figure: { value: '200', label: 'Customers' },
     highlights: [
-      'Gestion de repositories et pipelines Azure DevOps pour les intégrations et déploiements continus',
-      'Gestion de modules Terraform pour provisionner et maintenir les ressources Azure.',
-      'Exploitation d’AKS, diagnostic des pods, services, ingress et communications réseau',
-      'Administration de PostgreSQL et MySQL Flexible Server et automatisation des opérations de reprise',
-      'Mise en œuvre de Private Endpoints, Private DNS Zones, VNets et règles de sécurité'
+      'Apporter une expertise sur la philosophie DevOps à mettre en œuvre',
+	  'Participer à l’automatisation, au déploiement et à l’intégration des applications (CI/CD)',
+	  'Participer à l’optimisation continue de l’infrastructure : sécurité, performance',
+	  'Participer au monitoring de l’infrastructure'
     ],
-    stack: [
-      'KUBERNETES',
-      'AZURE',
-      'TERRAFORM',
-      'postgres',
-      'aws',
-      'ELK',
-      'CYBERSECURITY',
-      'DEVOPS',
-      'AKS',
-      'COSMOSDB',
-      'ANSIBLE',
-      'JENKINS'
-    ]
+    stack: ['jenkins', 'gitlab', 'ansible', 'postgres', 'vsphere', 'elk', 'cybersecurity', 'devops', 'portainer', 'vmware']
   },
   {
-    id: 'coinhouse',
-    title: 'Lead Front-end',
-    company: 'Coinhouse',
-    logo: { src: publicUrl('ui/logos/coinhouse.png') },
-    start: '2022-02',
-    end: '2025-08',
+    id: 'veolia',
+    title: 'Ingénieur Sysops',
+    company: 'Veolia',
+    logo: { src: publicUrl('ui/logos/veolia.svg') },
+    start: '2025-02',
+    end: '2026-05',
     figure: { value: '80%', label: 'Coverage' },
     highlights: [
-      'Built new features: savings account, euro account, staking, SCA, Travel Rule, KYC refresh.',
-      'Implemented the new design system and prepared the architecture for scale.',
-      'Coached 5 developers.',
-      'Unit and acceptance tests at 80% coverage on all new and refactored features.',
-      'Detailed project documentation: onboarding and best practices.'
+      'Migration des applications et services On-prem vers le Cloud GCP',
+	  'Reconstruction des VM Bastion',
+	  'Création et gestion des templates + blueprints VMWare',
+	  'Hardening OS: Firewall, sécuration SSH, fail2ban, sécurisation FS, VG',
+	  'Déploiement automatisé avec Puppet + Terraform',
+	  'Gestion des VM et BDD sur GCP',
+	  'Déploiement l’EDR Crowd Strike sur Linux + Windows',
+	  'Supervision Centreon via Nagios',
+	  'Gestion du VPN nomade et site2site'
     ],
-    stack: ['react', 'typescript', 'graphql', 'cssinjs', 'jest', 'testinglibrary']
+    stack: ['kubernetes', 'terraform', 'docker', 'gcp', 'crowdstrike', 'puppet']
   },
   {
-    id: 'beewyze',
-    title: 'Founding Developer',
-    company: 'BeeWyze',
-    logo: { src: publicUrl('ui/logos/beewyze.webp') },
-    start: '2024-01',
-    end: '2025-01',
+    id: 'edf-infra',
+    title: 'Ingénieur SysOps',
+    company: 'EDF',
+    logo: { src: publicUrl('ui/logos/edf.svg') },
+    start: '2023-01',
+    end: '2025-02',
     freelance: true,
     highlights: [
-      'Founding front-end developer of BeeWyze, where artists raise donations for themselves and a cause, on stage and online.',
-      'Built the web application with Remix and TypeScript.',
-      'Integrated Web3Auth for sign-in.'
+      'Pilotage de l’équipe Infrastructures, Cloud et Cybersécurité',
+	  'Infogérance du parc informatique de 1700 VM Linux + Windows',
+	  'Approvisionnement, installation et configuration des serveurs',
+	  'Virtualisation et conteneurisation',
+	  'Participation à l’automatisation et au déploiement CI/CD',
+	  'Gestion du Firewall et VLAN',
+	  'Gestion des playbooks Ansible et jobs Jenkins',
+	  'Suivi des CVE, patch de sécurité OS + Middlewares',
+	  'Déploiement et maintenance de l’EDR',
+	  'Supervision et monitoring des performances ',
+	  'Optimisation de l’infrastructure: consommation + performance'
     ],
-    stack: ['remix', 'typescript', 'web3auth']
+    stack: ['ansible', 'jenkins', 'docker', 'gitlab', 'postgres', 'vsphere', 'elk', 'cybersecurity', 'devops', 'portainer', 'vmware']
   },
   {
-    id: 'sap',
-    title: 'Front-end Developer',
-    company: 'SAP (Recast.ai)',
-    logo: { icon: siSap },
-    start: '2017-12',
-    end: '2019-10',
+    id: 'edf-app',
+    title: 'Ingénieur applicatif',
+    company: 'EDF',
+    logo: { src: publicUrl('ui/logos/edf.svg') },
+    start: '2020-05',
+    end: '2023-01',
     figure: { value: '16', label: 'React' },
     highlights: [
-      'Created and improved platform tools: homepage redesign, chatbot optimisation, bots for messaging platforms, analytics.',
-      'Refactored the architecture of several projects and migrated from React 15 to React 16.',
-      'Managed the front-end team.',
-      'Detailed project documentation and technical support for platform users.'
+      'Analyse des besoins métier et planification des étapes de BUILD',
+	  'Suivi, réception et validation des livraisons TMA',
+	  'Déploiement automatisé et ordonnancement des tâches',
+	  'Qualification et validation des pipelines CI/CD',
+	  'Gestion des playbooks Ansible et orchestrer des jobs Jenkins',
+	  'Rédaction des scénarios de tests',
+	  'Participation aux recettes et accompagnement du métier',
+	  'Support N3 auprès des utilisateurs',
+	  'Accompagnement lors du déploiement de l’application',
+	  'Maintenance applicative et évolutive'
     ],
-    stack: ['react', 'redux', 'javascript', 'jest', 'scss']
+    stack: ['ansible', 'jenkins', 'docker', 'gitlab', 'postgres', 'vsphere', 'elk', 'cybersecurity', 'devops', 'portainer', 'vmware']
   },
   {
-    id: 'mobeye',
-    title: 'Full Stack Developer',
-    company: 'Mobeye',
-    logo: { src: publicUrl('ui/logos/mobeye.webp') },
-    start: '2015-10',
-    end: '2017-10',
+    id: 'nextlane',
+    title: 'Backoffice N2',
+    company: 'Nextlane',
+    logo: { src: publicUrl('ui/logos/nextlane.svg') },
+    start: '2017-10',
+    end: '2020-05',
     highlights: [
-      'Redesigned the reporting and management tools.',
-      'Built a mobile application with React Native.',
-      'Improved the back-office tools.'
+      'Prise en charge les demandes clients escaladées par les conseillers support front office et des demandes remontées par les partenaires internationaux.',
+	  'Analyser, résoudre les demandes, établir le diagnostic en cas de bug.',
+	  'Qualification les bugs, détection les urgences et les risques.',
+	  'Rédaction des documentations, FAQ, newsletters client.',
+	  'Alimentation la base de connaissance de la hotline.'
     ],
-    stack: ['react', 'redux', 'meteor', 'reactnative', 'django', 'python', 'postgres', 'mongodb', 'scss']
+    stack: ['sqlserver', 'redhat', 'unix', 'oracle', 'zendesk']
   }
 ];
 
@@ -159,8 +162,6 @@ const index = (ym: string) => parse(ym).y * 12 + parse(ym).m - 1;
 
 export const monthsOf = (e: Experience) => Math.max(1, index(e.end ?? today) - index(e.start));
 
-// Months covered by several positions, counting overlaps (AwesomeApps ran alongside salaried jobs) once. A position
-// within a single month counts that month, as in monthsOf.
 export const monthsAcross = (positions: Experience[]) => {
   const months = new Set<number>();
   for (const e of positions) {
@@ -171,7 +172,6 @@ export const monthsAcross = (positions: Experience[]) => {
   return months.size;
 };
 
-// Levels read in whole years; a position under a year still counts as 1.
 export const yearsOf = (months: number) => Math.max(1, Math.round(months / 12));
 
 export const periodOf = (e: Experience) => `${label(e.start)} – ${e.end ? label(e.end) : 'today'}`;
