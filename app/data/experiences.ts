@@ -61,7 +61,7 @@ const POSITIONS: Experience[] = [
     start: '2025-05',
     figure: { value: '200', label: 'Customers' },
     highlights: [
-     'Gestion de repositories et pipelines Azure DevOps pour les intégrations et déploiements continus',
+      'Gestion de repositories et pipelines Azure DevOps pour les intégrations et déploiements continus',
       'Gestion de modules Terraform pour provisionner et maintenir les ressources Azure.',
       'Exploitation d’AKS, diagnostic des pods, services, ingress et communications réseau',
       'Administration de PostgreSQL et MySQL Flexible Server et automatisation des opérations de reprise',
